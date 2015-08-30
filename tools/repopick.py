@@ -143,7 +143,7 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-t', '--topic', help='pick all commits from a specified topic')
     parser.add_argument('-Q', '--query', help='pick all commits using the specified query')
-    parser.add_argument('-g', '--gerrit', default='http://review.cyanogenmod.org', help='Gerrit Instance to use. Form proto://[user@]host[:port]')
+    parser.add_argument('-g', '--gerrit', default='http://review.cas-online.nl', help='Gerrit Instance to use. Form proto://[user@]host[:port]')
     args = parser.parse_args()
     print (args.gerrit)
     if not args.start_branch and args.abandon_first:
